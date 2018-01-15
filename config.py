@@ -6,7 +6,8 @@ from setup import basedir
 class BaseConfig(object):
     SECRET_KEY = "SO_SECURE"
     DEBUG = True
-    SQLALCHEMY_DATABASE_URI = os.environ['DATABASE_URL']
+ #   SQLALCHEMY_DATABASE_URI = os.environ['DATABASE_URL']
+    SQLALCHEMY_DATABASE_URI="postgresql://dbdev01:Uni98756@localhost/flaskreact"
     SQLALCHEMY_TRACK_MODIFICATIONS = True
 
 
